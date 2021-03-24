@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,21 @@
 		B11269C0260BC8C9000A1D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11269BF260BC8C9000A1D3A /* Assets.xcassets */; };
 		B11269C3260BC8C9000A1D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11269C1260BC8C9000A1D3A /* LaunchScreen.storyboard */; };
 		B11269CE260BC8C9000A1D3A /* SuperAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11269CD260BC8C9000A1D3A /* SuperAPPTests.swift */; };
+		B1126A01260BD5D7000A1D3A /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = B1126A00260BD5D7000A1D3A /* Coordinator */; };
+		B1126A0A260BD643000A1D3A /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A06260BD643000A1D3A /* SecondCoordinator.swift */; };
+		B1126A0B260BD643000A1D3A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A07260BD643000A1D3A /* MainCoordinator.swift */; };
+		B1126A0C260BD643000A1D3A /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A08260BD643000A1D3A /* FirstCoordinator.swift */; };
+		B1126A0D260BD643000A1D3A /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A09260BD643000A1D3A /* ThirdCoordinator.swift */; };
+		B1126A12260BD659000A1D3A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A11260BD659000A1D3A /* Event.swift */; };
+		B1126A20260BD6B9000A1D3A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A1E260BD6B9000A1D3A /* SecondView.swift */; };
+		B1126A21260BD6B9000A1D3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A1F260BD6B9000A1D3A /* SecondViewController.swift */; };
+		B1126A28260BD6C3000A1D3A /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A26260BD6C3000A1D3A /* ThirdView.swift */; };
+		B1126A29260BD6C3000A1D3A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A27260BD6C3000A1D3A /* ThirdViewController.swift */; };
+		B1126A2D260BD6DB000A1D3A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A2C260BD6DA000A1D3A /* TabBarViewController.swift */; };
+		B1126A33260BD700000A1D3A /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A31260BD700000A1D3A /* FirstView.swift */; };
+		B1126A34260BD700000A1D3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A32260BD700000A1D3A /* FirstViewController.swift */; };
+		B1126A3C260BD735000A1D3A /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A3A260BD735000A1D3A /* ViewCodable.swift */; };
+		B1126A3D260BD735000A1D3A /* UIView+AddViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1126A3B260BD735000A1D3A /* UIView+AddViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +51,20 @@
 		B11269C9260BC8C9000A1D3A /* SuperAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11269CD260BC8C9000A1D3A /* SuperAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAPPTests.swift; sourceTree = "<group>"; };
 		B11269CF260BC8C9000A1D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1126A06260BD643000A1D3A /* SecondCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		B1126A07260BD643000A1D3A /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B1126A08260BD643000A1D3A /* FirstCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		B1126A09260BD643000A1D3A /* ThirdCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		B1126A11260BD659000A1D3A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B1126A1E260BD6B9000A1D3A /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		B1126A1F260BD6B9000A1D3A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B1126A26260BD6C3000A1D3A /* ThirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		B1126A27260BD6C3000A1D3A /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B1126A2C260BD6DA000A1D3A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B1126A31260BD700000A1D3A /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B1126A32260BD700000A1D3A /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B1126A3A260BD735000A1D3A /* ViewCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		B1126A3B260BD735000A1D3A /* UIView+AddViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddViews.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1126A01260BD5D7000A1D3A /* Coordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +107,9 @@
 		B11269B5260BC8C6000A1D3A /* SuperAPP */ = {
 			isa = PBXGroup;
 			children = (
+				B1126A39260BD71C000A1D3A /* Helper */,
+				B1126A05260BD623000A1D3A /* Controller */,
+				B1126A04260BD61E000A1D3A /* Coordinator */,
 				B11269EC260BCB23000A1D3A /* Utils */,
 				B11269BA260BC8C6000A1D3A /* ViewController.swift */,
 				B11269C4260BC8C9000A1D3A /* Info.plist */,
@@ -104,6 +137,73 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B1126A04260BD61E000A1D3A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A10260BD646000A1D3A /* Event */,
+				B1126A08260BD643000A1D3A /* FirstCoordinator.swift */,
+				B1126A07260BD643000A1D3A /* MainCoordinator.swift */,
+				B1126A06260BD643000A1D3A /* SecondCoordinator.swift */,
+				B1126A09260BD643000A1D3A /* ThirdCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B1126A05260BD623000A1D3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A2C260BD6DA000A1D3A /* TabBarViewController.swift */,
+				B1126A30260BD6DD000A1D3A /* First */,
+				B1126A16260BD669000A1D3A /* Second */,
+				B1126A17260BD66D000A1D3A /* Third */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1126A10260BD646000A1D3A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A11260BD659000A1D3A /* Event.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		B1126A16260BD669000A1D3A /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A1E260BD6B9000A1D3A /* SecondView.swift */,
+				B1126A1F260BD6B9000A1D3A /* SecondViewController.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		B1126A17260BD66D000A1D3A /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A26260BD6C3000A1D3A /* ThirdView.swift */,
+				B1126A27260BD6C3000A1D3A /* ThirdViewController.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		B1126A30260BD6DD000A1D3A /* First */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A31260BD700000A1D3A /* FirstView.swift */,
+				B1126A32260BD700000A1D3A /* FirstViewController.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		B1126A39260BD71C000A1D3A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B1126A3B260BD735000A1D3A /* UIView+AddViews.swift */,
+				B1126A3A260BD735000A1D3A /* ViewCodable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +220,9 @@
 			dependencies = (
 			);
 			name = SuperAPP;
+			packageProductDependencies = (
+				B1126A00260BD5D7000A1D3A /* Coordinator */,
+			);
 			productName = SuperAPP;
 			productReference = B11269B3260BC8C6000A1D3A /* SuperAPP.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +272,9 @@
 				Base,
 			);
 			mainGroup = B11269AA260BC8C6000A1D3A;
+			packageReferences = (
+				B11269FF260BD5D7000A1D3A /* XCRemoteSwiftPackageReference "CoordinatorFramework" */,
+			);
 			productRefGroup = B11269B4260BC8C6000A1D3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,9 +309,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1126A34260BD700000A1D3A /* FirstViewController.swift in Sources */,
+				B1126A3C260BD735000A1D3A /* ViewCodable.swift in Sources */,
+				B1126A12260BD659000A1D3A /* Event.swift in Sources */,
 				B11269BB260BC8C6000A1D3A /* ViewController.swift in Sources */,
+				B1126A3D260BD735000A1D3A /* UIView+AddViews.swift in Sources */,
+				B1126A0C260BD643000A1D3A /* FirstCoordinator.swift in Sources */,
+				B1126A20260BD6B9000A1D3A /* SecondView.swift in Sources */,
 				B11269B7260BC8C6000A1D3A /* AppDelegate.swift in Sources */,
+				B1126A0A260BD643000A1D3A /* SecondCoordinator.swift in Sources */,
+				B1126A0B260BD643000A1D3A /* MainCoordinator.swift in Sources */,
+				B1126A33260BD700000A1D3A /* FirstView.swift in Sources */,
 				B11269B9260BC8C6000A1D3A /* SceneDelegate.swift in Sources */,
+				B1126A28260BD6C3000A1D3A /* ThirdView.swift in Sources */,
+				B1126A21260BD6B9000A1D3A /* SecondViewController.swift in Sources */,
+				B1126A2D260BD6DB000A1D3A /* TabBarViewController.swift in Sources */,
+				B1126A29260BD6C3000A1D3A /* ThirdViewController.swift in Sources */,
+				B1126A0D260BD643000A1D3A /* ThirdCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B11269FF260BD5D7000A1D3A /* XCRemoteSwiftPackageReference "CoordinatorFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebelato/CoordinatorFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1126A00260BD5D7000A1D3A /* Coordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B11269FF260BD5D7000A1D3A /* XCRemoteSwiftPackageReference "CoordinatorFramework" */;
+			productName = Coordinator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B11269AB260BC8C6000A1D3A /* Project object */;
 }
