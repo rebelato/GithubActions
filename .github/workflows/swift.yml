@@ -13,6 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Set Gems
+      run: |
+        gem install bundler
+        bundle install
         
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.app
@@ -22,4 +27,5 @@ jobs:
         set -o pipefail
         xcodebuild build \
         -scheme SuperAPP \
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
+        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+        | xcpretty
