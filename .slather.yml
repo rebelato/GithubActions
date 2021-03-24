@@ -1,8 +1,6 @@
 coverage_service: cobertura_xml
 xcodeproj: SuperAPP.xcodeproj
-input_format: profdata
-output_directory: Coverage/
-build_directory: build/Build/
 scheme: SuperAPP
+output_directory: Coverage/
 ignore:
   - SuperAPPTests/*
