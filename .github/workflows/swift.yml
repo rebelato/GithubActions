@@ -21,11 +21,11 @@ jobs:
         
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.app
-        
-    - name: Build
+
+    - name: Build and test
       run: |
         set -o pipefail
-        xcodebuild build \
+        xcodebuild clean build test \
         -scheme SuperAPP \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
         | xcpretty
