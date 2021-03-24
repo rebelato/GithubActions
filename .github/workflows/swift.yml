@@ -1,0 +1,25 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+        
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_12.app
+        
+    - name: Build
+      run: |
+        set -o pipefail
+        xcodebuild build \
+        -scheme SuperAPP \
+        -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
