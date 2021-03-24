@@ -1,4 +1,4 @@
-name: Swift
+name: ci
 
 on:
   push:
@@ -13,13 +13,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Set Gems
+      run: |
+        gem install bundler
+        bundle install
         
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.app
-        
-    - name: Build
+
+    - name: Build and test
       run: |
         set -o pipefail
-        xcodebuild build \
+        xcodebuild clean build test \
         -scheme SuperAPP \
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
+        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+        | xcpretty

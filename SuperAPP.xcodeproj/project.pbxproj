@@ -13,18 +13,10 @@
 		B11269C0260BC8C9000A1D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11269BF260BC8C9000A1D3A /* Assets.xcassets */; };
 		B11269C3260BC8C9000A1D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11269C1260BC8C9000A1D3A /* LaunchScreen.storyboard */; };
 		B11269CE260BC8C9000A1D3A /* SuperAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11269CD260BC8C9000A1D3A /* SuperAPPTests.swift */; };
-		B11269D9260BC8C9000A1D3A /* SuperAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11269D8260BC8C9000A1D3A /* SuperAPPUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B11269CA260BC8C9000A1D3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B11269AB260BC8C6000A1D3A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B11269B2260BC8C6000A1D3A;
-			remoteInfo = SuperAPP;
-		};
-		B11269D5260BC8C9000A1D3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B11269AB260BC8C6000A1D3A /* Project object */;
 			proxyType = 1;
@@ -44,9 +36,6 @@
 		B11269C9260BC8C9000A1D3A /* SuperAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11269CD260BC8C9000A1D3A /* SuperAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAPPTests.swift; sourceTree = "<group>"; };
 		B11269CF260BC8C9000A1D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B11269D4260BC8C9000A1D3A /* SuperAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B11269D8260BC8C9000A1D3A /* SuperAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperAPPUITests.swift; sourceTree = "<group>"; };
-		B11269DA260BC8C9000A1D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B11269D1260BC8C9000A1D3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,7 +61,6 @@
 			children = (
 				B11269B5260BC8C6000A1D3A /* SuperAPP */,
 				B11269CC260BC8C9000A1D3A /* SuperAPPTests */,
-				B11269D7260BC8C9000A1D3A /* SuperAPPUITests */,
 				B11269B4260BC8C6000A1D3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +70,6 @@
 			children = (
 				B11269B3260BC8C6000A1D3A /* SuperAPP.app */,
 				B11269C9260BC8C9000A1D3A /* SuperAPPTests.xctest */,
-				B11269D4260BC8C9000A1D3A /* SuperAPPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,15 +91,6 @@
 				B11269CF260BC8C9000A1D3A /* Info.plist */,
 			);
 			path = SuperAPPTests;
-			sourceTree = "<group>";
-		};
-		B11269D7260BC8C9000A1D3A /* SuperAPPUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B11269D8260BC8C9000A1D3A /* SuperAPPUITests.swift */,
-				B11269DA260BC8C9000A1D3A /* Info.plist */,
-			);
-			path = SuperAPPUITests;
 			sourceTree = "<group>";
 		};
 		B11269EC260BCB23000A1D3A /* Utils */ = {
@@ -171,24 +142,6 @@
 			productReference = B11269C9260BC8C9000A1D3A /* SuperAPPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B11269D3260BC8C9000A1D3A /* SuperAPPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B11269E3260BC8C9000A1D3A /* Build configuration list for PBXNativeTarget "SuperAPPUITests" */;
-			buildPhases = (
-				B11269D0260BC8C9000A1D3A /* Sources */,
-				B11269D1260BC8C9000A1D3A /* Frameworks */,
-				B11269D2260BC8C9000A1D3A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B11269D6260BC8C9000A1D3A /* PBXTargetDependency */,
-			);
-			name = SuperAPPUITests;
-			productName = SuperAPPUITests;
-			productReference = B11269D4260BC8C9000A1D3A /* SuperAPPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,10 +155,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					B11269C8260BC8C9000A1D3A = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = B11269B2260BC8C6000A1D3A;
-					};
-					B11269D3260BC8C9000A1D3A = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = B11269B2260BC8C6000A1D3A;
 					};
@@ -226,7 +175,6 @@
 			targets = (
 				B11269B2260BC8C6000A1D3A /* SuperAPP */,
 				B11269C8260BC8C9000A1D3A /* SuperAPPTests */,
-				B11269D3260BC8C9000A1D3A /* SuperAPPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,13 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B11269C7260BC8C9000A1D3A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B11269D2260BC8C9000A1D3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,14 +217,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B11269D0260BC8C9000A1D3A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B11269D9260BC8C9000A1D3A /* SuperAPPUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,11 +224,6 @@
 			isa = PBXTargetDependency;
 			target = B11269B2260BC8C6000A1D3A /* SuperAPP */;
 			targetProxy = B11269CA260BC8C9000A1D3A /* PBXContainerItemProxy */;
-		};
-		B11269D6260BC8C9000A1D3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B11269B2260BC8C6000A1D3A /* SuperAPP */;
-			targetProxy = B11269D5260BC8C9000A1D3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,46 +437,6 @@
 			};
 			name = Release;
 		};
-		B11269E4260BC8C9000A1D3A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33974MC9LS;
-				INFOPLIST_FILE = SuperAPPUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rebelato.SuperAPPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SuperAPP;
-			};
-			name = Debug;
-		};
-		B11269E5260BC8C9000A1D3A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33974MC9LS;
-				INFOPLIST_FILE = SuperAPPUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rebelato.SuperAPPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SuperAPP;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,15 +463,6 @@
 			buildConfigurations = (
 				B11269E1260BC8C9000A1D3A /* Debug */,
 				B11269E2260BC8C9000A1D3A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B11269E3260BC8C9000A1D3A /* Build configuration list for PBXNativeTarget "SuperAPPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B11269E4260BC8C9000A1D3A /* Debug */,
-				B11269E5260BC8C9000A1D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
