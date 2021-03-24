@@ -32,11 +32,11 @@ internal class FirstView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    @objc private func pressSecondViewButton() {
+    @objc internal func pressSecondViewButton() {
         delegate?.didTapSecond()
     }
 
-    @objc private func pressThirdViewButton() {
+    @objc internal func pressThirdViewButton() {
         delegate?.didTapThird()
     }
 
