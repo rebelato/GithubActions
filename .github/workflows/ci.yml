@@ -7,44 +7,51 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  
+  job1: 
+    build:
 
-    runs-on: macos-latest
+      runs-on: macos-latest
 
+      steps:
+      - uses: actions/checkout@v2
+
+      - name: Set Gems
+        run: |
+          gem install bundler
+          bundle install
+          
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_12.app
+
+      - name: Build and test
+        run: |
+          set -o pipefail
+          slather setup
+          xcodebuild clean build test \
+          -scheme SuperAPP \
+          -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+          -enableCodeCoverage YES \
+          | xcpretty
+      
+      - name: Coverage report
+        run: slather coverage -x --binary-basename 'SuperAPP'
+
+      - name: Post coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./Coverage/cobertura.xml
+          fail_ci_if_error: true
+  
+  job2:
+    runs-on: ubuntu-latest
+    name: "Run Danger"
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Set Gems
-      run: |
-        gem install bundler
-        bundle install
-        
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_12.app
-
-    - name: Build and test
-      run: |
-        set -o pipefail
-        slather setup
-        xcodebuild clean build test \
-        -scheme SuperAPP \
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
-        -enableCodeCoverage YES \
-        | xcpretty
-    
-    - name: Coverage report
-      run: slather coverage -x --binary-basename 'SuperAPP'
-
-    - name: Post coverage
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./Coverage/cobertura.xml
-        fail_ci_if_error: true
-
-    - name: Danger
-      uses: danger/swift@3.3.0
-      with:
-          args: --failOnErrors --no-publish-check
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - name: Danger
+        uses: danger/swift@3.3.0
+        with:
+            args: --failOnErrors --no-publish-check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
