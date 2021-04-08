@@ -41,7 +41,13 @@ jobs:
                 file: ./Coverage/cobertura.xml
                 fail_ci_if_error: true
 
+    danger:
+        name: Danger
+        runs-on: ubuntu-latest
+        steps:
             - name: Danger
-              run: danger-swift ci
+              uses: danger/swift@3.3.0
+              with:
+                  args: --failOnErrors --no-publish-check --dangerfile ./Dangerfile.swift
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
