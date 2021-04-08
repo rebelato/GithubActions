@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: SuperAPP.xcodeproj
+scheme: SuperAPP
+output_directory: Coverage/
+ignore:
+  - SuperAPPTests/*
