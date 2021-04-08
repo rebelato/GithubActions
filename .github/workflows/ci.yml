@@ -21,7 +21,7 @@ jobs:
             - name: danger
               env:
                 DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-              run: bundle exec danger --dangerfile=Dangerfile.swift
+              run: bundle exec danger --dangerfile=Dangerfile.js
                 
             - name: Select Xcode
               run: sudo xcode-select -switch /Applications/Xcode_12.app
