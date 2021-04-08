@@ -22,6 +22,12 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.app
 
+    - name: "SwiftLint"
+      run:
+        - uses: actions/checkout@v1
+        - name: GitHub Action for SwiftLint
+          uses: norio-nomura/action-swiftlint@3.2.1
+
     - name: Build and test
       run: |
         set -o pipefail
