@@ -48,6 +48,6 @@ jobs:
             - name: Danger
               uses: danger/swift@3.3.0
               with:
-                  args: --failOnErrors --no-publish-check --dangerfile ./Dangerfile.swift
+                  args: --failOnErrors --no-publish-check --dangerfile artsy/peril-settings/org/allPRs.ts
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
