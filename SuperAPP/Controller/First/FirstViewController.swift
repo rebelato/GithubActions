@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
     }
 
     internal override func loadView() {
-        view = FirstView(frame: UIScreen.main.bounds)g
+        view = FirstView(frame: .zero)
     }
 
     internal override func viewDidLoad() {
