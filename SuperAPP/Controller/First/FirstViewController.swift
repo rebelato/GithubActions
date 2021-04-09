@@ -24,7 +24,6 @@ class FirstViewController: UIViewController {
 
     internal override func loadView() {
         view = FirstView(frame: .zero)
-        let x = view as! FirstView
     }
 
     internal override func viewDidLoad() {

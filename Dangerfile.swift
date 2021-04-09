@@ -18,10 +18,5 @@ let result = titleMR.range(of: pattern, options:.regularExpression)
 
 if result == nil {
     fail("Titulo do mr nao esta no padrao")
-}
-
-if let commitCount = danger.github.pullRequest.commitCount {
-    if commitCount > 10 {
-        fail("limite de commit excedido.")
-    }
+    message("O padrão deve ser [TipoTask/CB-NumeroTask] - Descrição")
 }
