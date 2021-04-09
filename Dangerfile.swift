@@ -11,9 +11,13 @@ if !changelogChanged {
   fail("No CHANGELOG entry added.")
 }
 
+let pattern = "\\[+([A-Z-a-z])+\\/(CB)+-+\\d{4}\\]+ -"
+
 let titleMR = danger.github.pullRequest.title
-if titleMR.isEmpty {
-    fail("Titulo do mr vazio.")
+let result = titleMR.range(of: pattern, options:.regularExpression)
+
+if result == nil {
+    fail("Titulo do mr nao esta no padrao")
 }
 
 if let commitCount = danger.github.pullRequest.commitCount {
